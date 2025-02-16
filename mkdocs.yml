@@ -1,0 +1,71 @@
+site_name: Портал документации на mkdocs
+theme:
+  language: ru   #вкл. поддержку русского языка в теме
+  name: material
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.action.edit # вкл. редактирование страницы
+    - content.code.copy # вкл. кнопку копирования блоков кода
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference  
+  icon:
+    admonition: # Иконки для информационных блоков в тексте
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+nav:
+  - Развертывание mkdocs: deploy.md   
+  - Настройка сайта: settings.md   
+plugins:
+  - search:
+      lang: 
+        - en
+        - ru
+repo_name: mkdocsportal
+repo_url: https://github.com/amihailov76/mkdocsportal
+edit_uri: blob/main/docs/ 
+markdown_extensions: 
+  - pymdownx.highlight: # плагин для включения блоков кода
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences 
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
