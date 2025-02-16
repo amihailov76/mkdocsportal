@@ -72,5 +72,4 @@ markdown_extensions:
   - pymdownx.blocks.caption
 extra:
   version:
-    provider: mike
-    alias: true
+    provider: mike   
