@@ -28,5 +28,5 @@ jobs:
       - run: mkdocs gh-deploy --force
       - run: git fetch 
       - run: pip install mike
-      - run: mike deploy --push --update-aliases gh-pages 2.0 latest
+      - run: mike deploy --push --update-aliases gh-pages 1.0 latest
       - run: mike set-default --push latest
