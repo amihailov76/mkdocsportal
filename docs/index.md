@@ -1,5 +1,5 @@
 # Статический сайт на mkdocs
-
+v1
 Здесь описано создание статического сайта с помощью scg-генератора mkdocs с темой [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), которая «из коробки» предлагает неплохой набор функций.  
 Полная документация на движок [mkdocs.org](https://www.mkdocs.org).  
 
