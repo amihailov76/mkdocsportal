@@ -53,6 +53,16 @@ plugins:
       lang: 
         - en
         - ru
+        # These fields are all optional; the defaults are as below...
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
 repo_name: mkdocsportal
 repo_url: https://github.com/amihailov76/mkdocsportal
 edit_uri: blob/main/docs/ 
