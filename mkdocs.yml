@@ -55,7 +55,6 @@ plugins:
         - ru
         # These fields are all optional; the defaults are as below...
   - mike:
-      # These fields are all optional; the defaults are as below...
       alias_type: symlink
       redirect_template: null
       deploy_prefix: ''
