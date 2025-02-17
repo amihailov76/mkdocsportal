@@ -24,6 +24,8 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: git config --global user.name = "Your Name"
+      - run: git config --global user.email = "your@mail"
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
       - run: git fetch
