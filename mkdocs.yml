@@ -2,6 +2,7 @@ site_name: Портал документации на mkdocs
 theme:
   language: ru   #вкл. поддержку русского языка в теме
   name: material
+  custom_dir: overrides
   features:
     - navigation.expand
     - navigation.indexes
@@ -54,6 +55,23 @@ plugins:
         - en
         - ru
         # These fields are all optional; the defaults are as below...
+  - print-site:
+      add_to_navigation: false # Пункт "Распечатать PDF" в меню, см. след. парам. 
+      print_page_title: 'Распечатать PDF' # Название пункта, см. пред. парам.
+      add_print_site_banner: false # Ненужный банер на странице печати
+      add_table_of_contents: true # Включает содержание
+      toc_title: 'Содержание' # Название содержания
+      toc_depth: 6 # Количество уровней заголовков в содержании
+      add_full_urls: false # Отображение адресов ссылок, например Ссылка (https://site) 
+      enumerate_headings: false # Нумерация заголовков 
+      enumerate_figures: true # Нумерация рисунков
+      add_cover_page: true # Титульная страница 
+      cover_page_template: "" # Шаблон титульной страницы
+      path_to_pdf: "assets/guide.pdf" # Путь к PDF
+      include_css: true # Переопределяет дефолтные CSS с целью кастомизации
+      enabled: true # Включает/отключает plug-in
+      exclude: # Исключает страницы из PDF
+        - index.md
 repo_name: mkdocsportal
 repo_url: https://github.com/amihailov76/mkdocsportal
 edit_uri: blob/main/docs/ 

@@ -26,7 +26,8 @@ jobs:
             mkdocs-material-
       - run: git config --global user.name = "Your Name"
       - run: git config --global user.email = "your@mail"
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material #устанавливаем тему Material
+      - run: pip install mkdocs-print-site-plugin #устанавливаем плагин для пдф https://timvink.github.io/mkdocs-print-site-plugin/index.html
       - run: mkdocs gh-deploy --force
       - run: git fetch
       - run: pip install mike
